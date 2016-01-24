@@ -1,0 +1,9 @@
+# incializando com django
+1) criar uma pasta onde se deseja criar um novo projeto
+2) na pasta criada executar: python django-admin.py startproject <name>,
+   where <name> is the name of the project you wish to create.
+3) dentro da mesma pasta criada no passo 1 (não confundir com a pasta criada no passo 2), para criar uma nova aplicação executar:
+   python manage.py startapp <appname>, where <appname> is the name of the application you wish to create.
+4) adicionar em settings.py (pasta criada no passo 2), adicionar a aplicação criada (do passo 3) em INSTALLED_APPS
+5) na pasta criada da aplicação (passo 3), criar o arquivo urls.py para realizar o mapeamento
+6) configurar o arquivo urls.py da pasta projeto (passo 2)
