@@ -6,12 +6,21 @@
         <title>Rango</title>
     </head>
     <body>
-        <h1>
-            Rango ok!
-            <strong>{{ boldmessage }}</strong><br />
-            <img src="{% static 'rango/images/foto.jpg' %}">
-            <br />
-            <a href="/rango/about/">About</a>
-        </h1>
+        <h1> Rango ok! </h1>
+        {% if categories %}
+            <ul>
+                {% for category in categories %}
+                    <li>
+                        <a href="/rango/category/{{ category.slug }}">{{ category.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+        <p>Não há categorias cadastradas!</p>
+        {% endif %}
+        <img src="{% static 'rango/images/foto.jpg' %}">
+        <br />
+        <a href="/rango/about/">About</a>
+
     </body>
 </html>

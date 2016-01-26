@@ -7,3 +7,12 @@
 4) adicionar em settings.py (pasta criada no passo 2), adicionar a aplicação criada (do passo 3) em INSTALLED_APPS
 5) na pasta criada da aplicação (passo 3), criar o arquivo urls.py para realizar o mapeamento
 6) configurar o arquivo urls.py da pasta projeto (passo 2)
+
+# trabalhando com models
+1) crie seu modelo em models.py na pasta da aplicação
+2) registre os modelos criados no arquivo admin.py para ter acesso na administração
+3) caso faça alguma alteração execute o cmd: python manage.py makemigrations e depois python manage.py migrate
+4) crie o arquivo para população de dados na pasta do mesmo nível que o 'manage.py'
+
+# gerar o SQL do banco
+python manage.py sqlmigrate <appname> 0001
