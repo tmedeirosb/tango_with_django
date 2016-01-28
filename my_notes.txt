@@ -16,3 +16,7 @@
 
 # gerar o SQL do banco
 python manage.py sqlmigrate <appname> 0001
+
+# upload de imagens
+ao configurar um cmapo no models que é do tipo imagem e definir o nome da pasta que o mesmo será armazenado, foi
+criado uma pasta na pasta raiz do projeto (tango_with_django) com o nome definido
