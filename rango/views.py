@@ -138,5 +138,7 @@ def register(request):
 
     # Render the template depending on the context.
     return render(request,
-            'rango/register.html',
+            'user_logirango/register.html',
             {'user_form': user_form, 'profile_form': profile_form, 'registered': registered} )
+
+
