@@ -11,9 +11,8 @@ from django.contrib.auth import logout
 
 # Create your views here.
 def index(request):
-    # return HttpResponse("Olá, Rango!")
-    #context_dict = {'boldmessage': 'Dun dun!'}
-    #return render(request, 'rango/index.html', context_dict)
+    # teste COOKIE
+    # request.session.set_test_cookie()
 
     category_list = Category.objects.order_by('-likes')[:5]
     context_dict  = {'categories': category_list}
@@ -88,6 +87,10 @@ def add_page(request, category_name_slug):
 
 
 def register(request):
+    # teste COOKIE
+    # if request.session.test_cookie_worked():
+    #    print(">>>> TEST COOKIE WORKED!")
+    #    request.session.delete_test_cookie()
 
     # A boolean value for telling the template whether the registration was successful.
     # Set to False initially. Code changes value to True when registration succeeds.
