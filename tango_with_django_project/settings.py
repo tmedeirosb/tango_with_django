@@ -133,3 +133,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_URL = '/rango/login/'
+
+# SESSION expirar quando o browser for fechado
+# SESSION_EXPIRE_AT_BROWSER_CLOSE = True
