@@ -20,3 +20,12 @@ python manage.py sqlmigrate <appname> 0001
 # upload de imagens
 ao configurar um cmapo no models que é do tipo imagem e definir o nome da pasta que o mesmo será armazenado, foi
 criado uma pasta na pasta raiz do projeto (tango_with_django) com o nome definido
+
+# config registration
+ao configurar o registration os seguintes links são válidos
+registration -> /accounts/register/
+registration complete -> /accounts/register/complete
+login -> /accounts/login/
+logout -> /accounts/logout/
+password change -> /password/change/
+password reset -> /password/reset/
